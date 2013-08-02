@@ -24,8 +24,8 @@ function ajaxLoader (el, options) {
 		var overlay = $('<div></div>').css({
 				'background-color': this.options.bgColor,
 				'opacity':this.options.opacity,
-				'width':container.width(),
-				'height':container.height(),
+				'width':'100%',
+				'height': '100%',
 				'position':'absolute',
 				'top':'0px',
 				'left':'0px',

@@ -1,9 +1,9 @@
 var rohlx = rohlx || {};
 
 (function ($,mod) {
-        var loader ;
+   
        mod.init = function(){
-              console.log('test');
+            
               mod._init();
               mod._prefilterajax();
               mod._bind();
@@ -14,23 +14,16 @@ var rohlx = rohlx || {};
            
             $.ajax({  
             type: "GET",  
-           
-            data: "gallery",  
-            beforeSend: function() {
-                console.log('beforesend');
-            },
-            complete: function() {
-                console.log('after call');
-            },
-            success: function() {  
-               console.log('sucess call');
-           },
-           error: function(a,b,c) {  
-               console.log('error call'+c);
-               setTimeout(function(){ajaxloaderObj.remove();},1000);
-               
-           }
-           
+            url: "searchresults.jsp",
+            data: "action=gallery"})
+            .done(function(response, textStatus, jqXHR) {  
+            	ajaxloaderObj.remove();
+                $("#datacontent").html(jqXHR.responseText);})
+            .fail( function(jqXHR, textStatus, errorThrown) {
+            	 ajaxloaderObj.remove();
+            	 $("#errorbar").html("<div class=\"alert alert-danger\">"+errorThrown+"</div>");
+            	console.log(errorThrown);
+            	console.log("textstate"+textStatus);
             });
        };
        
@@ -41,8 +34,6 @@ var rohlx = rohlx || {};
        
        mod._prefilterajax = function(){
               $.ajaxPrefilter(function(options){
-                     console.log(options);
-                     options.url = "*";
                      ajaxloaderObj = new ajaxLoader($('body'), {classOveride: 'blue-loader', bgColor: '#000', opacity: '0.3'});
               });
        };
@@ -52,7 +43,11 @@ var rohlx = rohlx || {};
        };
        
        mod._init = function(){
-            mod._activateMenu();             
+            mod._activateMenu();
+            
+            $('#myModal').modal({
+            	keyboard: true
+            });
        };
        
        

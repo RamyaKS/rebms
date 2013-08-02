@@ -1,3 +1,7 @@
+.pagination > li {
+	display: inline;
+}
+
 a {
    outline: 0;
 }
@@ -38,3 +42,6 @@ h3{
 box-shadow: 0 0 5px #888;
 }
 
+.search{
+	margin-top: 10px;
+}
