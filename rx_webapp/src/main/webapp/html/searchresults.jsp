@@ -8,6 +8,7 @@
 			<span class="input-group-addon">Search Request No:</span> <input
 				type="text" class="form-control search" placeholder="searchID">
 			<a class="btn btn-primary">Search</a>
+			<a class="btn btn-primary">New Request</a>
 		</div>
 	</div>
 </div>
@@ -105,7 +106,7 @@
 </div>
 
 <div class="text-right">
-		<ul class="pagination">
+		<ul class="pagination pagination-large">
 			<li><a href="#">&laquo;</a></li>
 			<li><a href="#">1</a></li>
 			<li><a href="#">2</a></li>

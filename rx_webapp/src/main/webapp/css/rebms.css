@@ -2,6 +2,15 @@
 	display: inline;
 }
 
+.dl-horizontal{
+	margin-top: 4px !important;
+}
+
+.error{
+color: #DD1144;
+font-size: 11px;
+}
+
 a {
    outline: 0;
 }
