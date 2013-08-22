@@ -5,3 +5,9 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
+<listener> 
+<listener-class> 
+org.springframework.web.context.ContextLoaderListener 
+</listener-class> 
+</listener> 
+
