@@ -8,7 +8,7 @@
 			<span class="input-group-addon">Search Request No:</span> <input
 				type="text" class="form-control search" placeholder="searchID">
 			<a class="btn btn-primary">Search</a>
-			<a class="btn btn-primary">New Request</a>
+			<a class="btn btn-primary" data-toggle="modal" href="#myModal">New Request</a>
 		</div>
 	</div>
 </div>
