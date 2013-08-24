@@ -17,7 +17,7 @@ public class HomeController {
 		System.out.println("inside the handler method");
 		System.err.println("inside the handler method");
 		  model.addAttribute("message", "Hello World!");
-		 return "home";
+		 return "homeresponse";
 	}
 
 }
