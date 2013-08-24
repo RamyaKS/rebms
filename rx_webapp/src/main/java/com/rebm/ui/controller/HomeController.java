@@ -15,6 +15,7 @@ public class HomeController {
 	public String handleRequest(Model model)
 	{
 		System.out.println("inside the handler method");
+		System.err.println("inside the handler method");
 		  model.addAttribute("message", "Hello World!");
 		 return "home";
 	}
