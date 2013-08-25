@@ -14,7 +14,7 @@ var rohlx = rohlx || {};
            
             $.ajax({  
             type: "GET",  
-            url: "searchresults.jsp",
+            url: "searchrequests",
             data: "action=gallery"})
             .done(function(response, textStatus, jqXHR) {  
             	ajaxloaderObj.remove();

@@ -6,4 +6,5 @@
 	<definition name="homeresponse" template="/WEB-INF/jsps/template.jsp">
 		<put-attribute name="body" value="/WEB-INF/jsps/home.jsp" />
 	</definition>
+	<definition name="searchresults" template="/WEB-INF/jsps/searchresults.jsp"/>
 </tiles-definitions>

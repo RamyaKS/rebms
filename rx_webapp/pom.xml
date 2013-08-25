@@ -10,6 +10,7 @@
 	<properties>
 		<org.springframework.version>3.2.3.RELEASE</org.springframework.version>
 		<tiles.version>2.2.2</tiles.version>
+		<cxf.version>2.7.4</cxf.version>
 	</properties>
 	<build>
 		<finalName>rx_webapp</finalName>
@@ -189,5 +190,11 @@
 			<version>${tiles.version}</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-bundle-jaxrs</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
 	</dependencies>
 </project>
